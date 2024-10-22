@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Navigator</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        /* Full-screen map */
+        #map { height: 100vh; width: 100%; }
+    </style>
+</head>
+<body>
+    <!-- Map Container -->
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <script>
+        // Initialize the map at a default location
+        var map = L.map('map').setView([40.730610, -73.935242], 13); // New York City
+
+        // Load tiles from OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add gym markers with names
+        var gyms = [
+            { name: 'Gym 1', lat: 40.742, lon: -73.983 },
+            { name: 'Gym 2', lat: 40.730, lon: -73.980 },
+            { name: 'Gym 3', lat: 40.738, lon: -73.985 }
+        ];
+
+        gyms.forEach(function(gym) {
+            var marker = L.marker([gym.lat, gym.lon]).addTo(map);
+            marker.bindPopup('<b>' + gym.name + '</b>');
+        });
+    </script>
+</body>
+</html>
