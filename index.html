@@ -1,144 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evolve You.fit</title>
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- favicon -->
-     <link rel="icon" href="./images/EvolVE.png">
-</head>
-<body>
+    <link rel="icon" href="./images/EvolVE.png" />
+    <!-- Firebase SDK -->
+  </head>
+  <body>
     <nav class="bg-dark">
-        <div class="logo">
-            <img src="./images/EvolVE.png " alt="capital inc logo" class="w50">
-        </div>
-     <ul>
+      <div class="logo">
+        <img src="./images/EvolVE.png " alt="capital inc logo" class="w50" />
+      </div>
+      <ul>
         <li><a href="#home">Home</a></li>
-            <li><a href="meditate.html">Lets Meditate!</a></li>
-                <li><a href="recipe.html">Try Tomato!</a></li>
-                    <li><a href="gym.html">Locate Gyms!</a></li>
-     </ul>
+        <li><a href="meditate.html">Lets Meditate!</a></li>
+        <li><a href="recipe.html">Try Tomato!</a></li>
+        <li><a href="gym.html">Locate Gyms!</a></li>
+      </ul>
     </nav>
-                        <div id="showcase">
-                            <div class="overlay"></div>
-                            <div class="showcase-content text-center">
-                                <h2 class="l-heading wow animate__bounceIn"> <span class="text-primary">EVOLVING</span>for a healthy you today and tomorrow</h2>
-                                <p>One stop platform for all your needs. Recipe finder,Gym navigators around you,Meditation trackers and more....</p>
-                                <a href="#" class="btn">EXPLORE</a>
-                            </div>
-                        </div>
+    <div id="showcase">
+      <div class="overlay"></div>
+      <div class="showcase-content text-center">
+        <h2 class="l-heading wow animate__bounceIn">
+          <span class="text-primary">EVOLVING</span>for a healthy you today and
+          tomorrow
+        </h2>
+        <p>
+          One stop platform for all your needs. Recipe finder,Gym navigators
+          around you,Meditation trackers and more....
+        </p>
+        <a href="#" class="btn">EXPLORE</a>
+      </div>
+    </div>
     <div id="what" class="page-section bg-light">
-        <div class="container">
-            <h2 class="m-heading text-center mb-10"><span class="text-primary">What</span> To Explore? </h2>
-            <div class="items">
-                <div class="item service wow animate__fadeInRight ">
-                    <i class="fa fa-burger fa-2x"></i>
-                    <h4>Recipe Tracker</h4>
-                    <p>Many people have dietary restrictions or preferences (e.g., vegan, gluten-free, low-carb), and a recipe finder can filter recipes that match these criteria, making it easier to maintain a healthy and enjoyable diet without having to manually sift through unsuitable
-                    </p>
-                </div>
-                <div class="item service">
-                    <i class="fa fa-dumbbell fa-2x"></i>
-                    <h4>Meditation Tracker</h4>
-                    <p>Meditation tracking can play a crucial role in maintaining and improving a regular meditation practice. Here are several key reasons why tracking your meditation is important</p>
-                </div>
-                <div class="item service">
-                    <i class="fa fa-person-running fa-2x"></i>
-                    <h4>Gym Locator</h4>
-                    <p>A gym locator helps users quickly find nearby fitness centers or gyms based on their location, saving them time and effort. This is especially helpful when traveling or moving to a new city where users may be unfamiliar with local gym</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="m-heading text-center mb-10">
+          <span class="text-primary">What</span> To Explore?
+        </h2>
+        <div class="items">
+          <div class="item service wow animate__fadeInRight">
+            <i class="fa fa-burger fa-2x"></i>
+            <h4>Recipe Tracker</h4>
+            <p>
+              Many people have dietary restrictions or preferences (e.g., vegan,
+              gluten-free, low-carb), and a recipe finder can filter recipes
+              that match these criteria, making it easier to maintain a healthy
+              and enjoyable diet without having to manually sift through
+              unsuitable
+            </p>
+          </div>
+          <div class="item service">
+            <i class="fa fa-dumbbell fa-2x"></i>
+            <h4>Meditation Tracker</h4>
+            <p>
+              Meditation tracking can play a crucial role in maintaining and
+              improving a regular meditation practice. Here are several key
+              reasons why tracking your meditation is important
+            </p>
+          </div>
+          <div class="item service">
+            <i class="fa fa-person-running fa-2x"></i>
+            <h4>Gym Locator</h4>
+            <p>
+              A gym locator helps users quickly find nearby fitness centers or
+              gyms based on their location, saving them time and effort. This is
+              especially helpful when traveling or moving to a new city where
+              users may be unfamiliar with local gym
+            </p>
+          </div>
         </div>
-    </div>  
+      </div>
+    </div>
     <div id="who">
+      <div class="items">
+        <div class="item" id="team-image"></div>
+        <div class="item">
+          <div class="page-section bg-dark">
+            <h2 class="m-heading text-center mb-10">
+              <span class="text-primary">Who</span> Are We?
+            </h2>
+            <p>
+              As fitness website owners, building a strong online presence is
+              crucial in today’s digital landscape, where people increasingly
+              rely on the internet for health and wellness guidance. Whether you
+              are running a gym, personal training service, or fitness blog,
+              your website serves as the central hub for engaging with potential
+              clients, sharing expertise, and promoting fitness programs..
+            </p>
+            <h3>Our Motives</h3>
+            <ul class="list">
+              <li>Healthifying You</li>
+              <li>Curating healthy diet plans</li>
+              <li>Best suitable Gym navigators</li>
+              <li>Accuarate meditation trackers</li>
+              <li>One-stop fitness website</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="clients" class="page-section">
+      <div class="container">
+        <h2 class="m-heading text-center mb-10">
+          <span class="text-primary">Our</span> Clients
+        </h2>
         <div class="items">
-            <div class="item" id="team-image"></div>
-            <div class="item">
-                <div class="page-section bg-dark">
-                    <h2 class="m-heading text-center mb-10"> <span class="text-primary">Who</span> Are We?</h2>
-                    <p>As fitness website owners, building a strong online presence is crucial in today’s digital landscape, where people increasingly rely on the internet for health and wellness guidance. Whether you are running a gym, personal training service, or fitness blog, your website serves as the central hub for engaging with potential clients, sharing expertise, and promoting fitness programs..</p>
-                    <h3>Our Motives</h3>
-                    <ul class="list">
-                        <li>Healthifying You</li>
-                        <li>Curating healthy diet plans</li>
-                        <li>Best suitable Gym navigators</li>
-                        <li>Accuarate meditation trackers</li>
-                        <li>One-stop fitness website</li>
-                    </ul>
-                </div>
-            </div>
+          <div class="item">
+            <img src="./images/4a44580ac1ed3ccbf05f5e72ee10d5b3.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img
+              src="./images/healthy-life-fitness-gym-logo-design-template_789672-299.avif"
+              alt=""
+            />
+          </div>
+          <div class="item"><img src="./images/logo_4x.jpg" alt="" /></div>
+          <div class="item">
+            <img
+              src="./images/png-transparent-gold-s-gym-fitness-centre-bench-physical-fitness-gym-miscellaneous-logo-area.png"
+              alt=""
+            />
+          </div>
+          <div class="item"><img src="./images/EvolVE.png" alt="" /></div>
         </div>
-    </div>                
-     <div id="clients" class="page-section">
-        <div class="container">
-            <h2 class="m-heading text-center mb-10"> <span class="text-primary">Our</span> Clients</h2>
-            <div class="items">
-                <div class="item"><img src="./images/4a44580ac1ed3ccbf05f5e72ee10d5b3.jpg" alt=""></div>
-                <div class="item"><img src="./images/healthy-life-fitness-gym-logo-design-template_789672-299.avif" alt=""></div>
-                <div class="item"><img src="./images/logo_4x.jpg" alt=""></div>
-                <div class="item"><img src="./images/png-transparent-gold-s-gym-fitness-centre-bench-physical-fitness-gym-miscellaneous-logo-area.png" alt=""></div>
-                <div class="item"><img src="./images/EvolVE.png" alt=""></div>
-            </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="items">
+        <div class="item">
+          <div class="page-section bg-primary">
+            <h2>Contact Us</h2>
+            <p>Please use the form below to contact us</p>
+            <form>
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  id="name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">email</label>
+                <input
+                  id="email"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone NUmber</label>
+                <input
+                  id="phone"
+                  type="number"
+                  class="form-control"
+                  placeholder="Enter Phone Number"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  placeholder="Enter message"
+                  rows="5"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn btn-block btn-dark" />
+              </div>
+            </form>
+          </div>
         </div>
-     </div>
-     <div id="contact">
-        <div class="items">
-            <div class="item">
-                <div class="page-section bg-primary">
-                    <h2>Contact Us</h2>
-                    <p>Please use the form below to contact us</p>
-                    <form >
-                        <div class="form-group">
-                            <label for="name" class="form-label">Name</label>
-                            <input id="name" type="text" class="form-control" placeholder="Enter Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">email</label>
-                            <input id="email" type="text" class="form-control" placeholder="Enter email">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" class="form-label">Phone NUmber</label>
-                            <input id="phone" type="number" class="form-control" placeholder="Enter Phone Number">
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message"  class="form-control" placeholder="Enter message" rows="5"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" class="btn btn-block btn-dark">
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="item">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.433157016508!2d73.14044731017921!3d19.26352058190492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7968ef0610567%3A0x9890fc3630d934b8!2sGodrej%20Riverside%2C%20GODREJ%20RIVERSIDE%2C%20Godrej%20Hill%2C%20Khadakpada%2C%20Kalyan%2C%20Maharashtra%20421301!5e0!3m2!1sen!2sin!4v1718971594535!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <div class="item">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.433157016508!2d73.14044731017921!3d19.26352058190492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7968ef0610567%3A0x9890fc3630d934b8!2sGodrej%20Riverside%2C%20GODREJ%20RIVERSIDE%2C%20Godrej%20Hill%2C%20Khadakpada%2C%20Kalyan%2C%20Maharashtra%20421301!5e0!3m2!1sen!2sin!4v1718971594535!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-     </div>
-     <footer class="bg-dark p-20 text-center">
-        <div class="container">
-            <p>&copy; 2024; Made by Dhawal Abhonkar <span style="color: red;">&hearts;</span>All Rights Reserved</p>
-        </div>
-        
-     </footer>
-    
-    
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="js/wow.min.js"></script>
-<script>
-new WOW(
-    {
-                      
-                      animateClass: 'animate__animated', // default
-                      
-    pt>
+      </div>
+    </div>
+    <footer class="bg-dark p-20 text-center">
+      <div class="container">
+        <p>
+          &copy; 2024; Made by Dhawal Abhonkar
+          <span style="color: red">&hearts;</span>All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW(
+        {
 
-</html>                }
-).init();
-</script>
+                          animateClass: 'animate__animated', // default
+
+        pt>
+                   }
+    ).init();
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/auth.js"></script>
+</html>

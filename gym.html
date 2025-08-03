@@ -14,6 +14,16 @@
 <body>
     <!-- Map Container -->
     <div id="map"></div>
+        <div id="workout-log">
+  <h2>Log Workout</h2>
+  <form id="workout-form">
+    <input type="text" id="exercise" placeholder="Exercise Name" required>
+    <input type="number" id="sets" placeholder="Sets" required>
+    <input type="number" id="reps" placeholder="Reps" required>
+    <button type="submit">Log Workout</button>
+  </form>
+  <ul id="workout-list"></ul>
+</div>
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
@@ -40,5 +50,6 @@
             marker.bindPopup('<b>' + gym.name + '</b>');
         });
     </script>
+    <script src="js/workouts.js"></script>
 </body>
 </html>

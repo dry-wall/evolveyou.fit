@@ -1,0 +1,15 @@
+#auth-container, #workout-log, #calorie-log {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+input, button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  #auth-container, #workout-log, #calorie-log {
+    padding: 10px;
+  }
+}

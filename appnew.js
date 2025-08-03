@@ -11,6 +11,40 @@ const startButton = document.getElementById('start-btn');
 const resetButton = document.getElementById('reset-btn');
 const sessionList = document.getElementById('session-list');
 
+const db = firebase.firestore();
+
+function logSession(type, duration, timestamp) {
+  const user = firebase.auth().currentUser;
+  if (user) {
+    db.collection('users').doc(user.uid).collection('meditation').add({
+      type: type, // 'work' or 'break'
+      duration: duration,
+      timestamp: timestamp
+    })
+    .then(() => console.log('Session logged to Firestore'))
+    .catch((error) => console.error('Error logging session:', error));
+  }
+}
+
+function displaySessions() {
+  const user = firebase.auth().currentUser;
+  if (user) {
+    db.collection('users').doc(user.uid).collection('meditation')
+      .orderBy('timestamp', 'desc')
+      .get()
+      .then((querySnapshot) => {
+        const logList = document.getElementById('session-log'); // Add this element to meditate.html
+        logList.innerHTML = '';
+        querySnapshot.forEach((doc) => {
+          const data = doc.data();
+          const li = document.createElement('li');
+          li.textContent = `${data.type} - ${data.duration} mins on ${new Date(data.timestamp).toLocaleString()}`;
+          logList.appendChild(li);
+        });
+      });
+  }
+}
+
 // List of inspiring quotes
 const quotes = [
     "Believe in yourself and all that you are!",
